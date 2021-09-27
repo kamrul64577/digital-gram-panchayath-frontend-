@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {Navbar, Nav, Container} from 'react-bootstrap'
 import { NavLink } from 'react-router-dom';
 import logo from '../image/freeLogo.png'
@@ -9,9 +9,18 @@ import {firebase} from '../../firebaseConfig'
 import { auth } from '../../firebaseConfig'
 
 export default function MyNavbar() {
-
+    const [loggedIn, setLoggedIn] = useState(null);
     var user = firebase.auth().currentUser;
     console.log(user)
+    firebase.auth().onAuthStateChanged(function (user) {
+        if (user) {
+            console.log(user)
+            setLoggedIn(user);
+
+        } else {
+            console.log('nothing')
+        }
+    });
     return (
         <>
             <Navbar className="navbar" expand="lg">
@@ -27,11 +36,11 @@ export default function MyNavbar() {
                             <NavLink className="nav-li" activeStyle={{ color: "#FFFFFF" }} exact to="/contact-us">Contact Us</NavLink>
                         </Nav>
                         <Nav className=" ">
-                            {/* <NavLink className="nav-li sign-up" exact to="/Signup">Signup</NavLink> */}
-                            {/* {user ? <NavLink className="nav-li sign-up" activeStyle={{ color: "#FFFFFF" }} exact to="/userlogin">Logout</NavLink> : <NavLink className="nav-li sign-up" activeStyle={{ color: "#FFFFFF" }} exact to="/userlogin" onClick={refreshPage}>Login</NavLink>} */}
+                           
+                            {loggedIn ? <NavLink className="nav-li sign-up" activeStyle={{ color: "#FFFFFF" }} exact to="/userlogin">Logout</NavLink> : <NavLink className="nav-li sign-up" activeStyle={{ color: "#FFFFFF" }} exact to="/userlogin" >Login</NavLink>}
                           {/* <NavLink className="nav-li sign-up" activeStyle={{ color: "#FFFFFF" }} exact to="/userlogin">Login</NavLink>  */}
                          
-                            <NavLink className="nav-li sign-up" activeStyle={{ color: "#FFFFFF" }} exact to="/userlogin">Logout</NavLink>
+                            {/* <NavLink className="nav-li sign-up" activeStyle={{ color: "#FFFFFF" }} exact to="/userlogin">Logout</NavLink> */}
                             
                         </Nav>
                     </Navbar.Collapse>

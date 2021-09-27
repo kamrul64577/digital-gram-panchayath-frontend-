@@ -14,8 +14,7 @@ import PrivateRoute from '../userAuthentication/PrivateRoute'
 import Repair from '../repair/Repair'
 import NewService from '../newService/NewService'
 
-import AddEdit from '../serviceOfficer/AddEdit'
-import View from '../serviceOfficer/View'
+
 
 
 export default function Router(){
@@ -36,8 +35,7 @@ export default function Router(){
                         <Route exact path="/usersignup" component={UserSignup} />
                         <Route exact path="/userlogout" component={UserLogout} />
 
-                        <Route exact path="/add" component={AddEdit} />
-                        <Route exact path="/view/:id" component={View} />
+                       
 
                         <PrivateRoute exact path="/repair" component={Repair} />
                         <PrivateRoute exact path="/newService" component={NewService} />

@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import MyNavbar from './components/navbar/MyNavbar';
 import Router from './components/router/Router';
@@ -30,7 +30,3 @@ export default App;
 
 
 
-{/* <PrivateRoute exact path='/' component={Dashboard} />
-            <Route path='/signup' component={Signup} />
-            <Route path='/login' component={Login} />
-            <Route path='/forgot-password' component={ForgotPassword} /> */}
