@@ -15,20 +15,22 @@ export default function Footer() {
                         </Col>
                         <Col lg={3}>
                             <h3>Services</h3>
-                            <p>Digital Gram Panchayath</p>
-                            <p>Support</p>
-                            <p>Cookies Policy</p>
+                            <p>Get advise from Officer</p>
+                            <p>Feedback</p>
+                            <p>Articles</p>
                         </Col>
                         <Col lg={3}>
-                            <h3>Services</h3>
-                            <p>Digital Gram Panchayath</p>
-                            <p>Support</p>
-                            <p>Cookies Policy</p>
+                            <h3>Support</h3>
+                            <p>Real Time Chat with Officer</p>
+                            <p>Emergency Help</p>
+                            {/* <p>Cookies Policy</p> */}
                         </Col>
-                        <Col lg={3}>
+                        <Col lg={3}> 
+
                             <h3>Our Address</h3>
-                            <p>Ramdhana-3130</p>
-                            <p>Bishwanath, Sylhet</p>
+                            <p>Ramdhana, Bishwanath</p>
+                            <p>Taltola, Surma Tower</p>
+                            <p>Sylhet 3100</p>
                             <ul className="list-unstyled d-flex">
                                 <li><Link to="#"><i className="fab fa-facebook-f"></i></Link></li>
                                 <li><Link to="#"><i className="fab fa-google-plus-g"></i></Link></li>

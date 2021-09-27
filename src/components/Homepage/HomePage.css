@@ -27,8 +27,10 @@ body {
 .news-header{
     color: #13287D;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 38px;
     line-height: 1.25;
+    margin-top: 30px;
+    margin-right: 45px;
 }
 .news-subHeader{
     font-weight: 700;
@@ -37,10 +39,13 @@ body {
     margin-top: 16px;
     color: #279e64;
     text-transform: capitalize;
+    /* text-align: center; */
+    margin-left: -30px;
 }
 .news-card{
     -webkit-box-shadow: 1px 1px 6px 5px rgba(0,0,0,0.74); 
     box-shadow: 1px 1px 6px 5px rgba(0,0,0,0.74);
+    margin-top: 50px;
     
 }
 .card-img{
@@ -51,3 +56,13 @@ body {
     color: #279e64;
     font-size: 20px;
 }
+
+
+.repair{
+    padding: 15px;
+    background-color: #DDDDDD;
+    /* color: orange; */
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+}
+

@@ -5,11 +5,16 @@ import { Typewriter } from 'react-simple-typewriter'
 import { Card, CardGroup, Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
+
+
 import news1 from '../image/news-1.jpg'
 import news2 from '../image/news-2.jpg'
 import news3 from '../image/news-3.jpg'
 
 export default function Home() {
+    
+       
+        
     
     const handleType = (count) => {
         // access word count number
@@ -20,7 +25,7 @@ export default function Home() {
     const handleDone = () => {
         // console.log(`Done after 5 loops!`)
     }
-
+    
     return (
         <>
             {/* Header Section  */}
@@ -44,12 +49,17 @@ export default function Home() {
                 </h1>
             </section>
 
+            <Container>
+                <h3 className="repair my-4">Do you need Repair or new installment anything?</h3> <br/>
+                <Link to="/repair" className="read-more apply">Click Here to Apply</Link>
+
+            </Container>
+
             {/* News Section  */}
             <section>
                 <Container>
                     <div className="text-center py-5">
-                        <h1 className="news-header">Every Single Update From <br />
-                            Our Journal</h1>
+                        <h1 className="news-header">Every Single Update From Our Journal</h1>
                         <p className="news-subHeader">Recent News</p>
                     </div>
                     <div className="news-body mb-5">
