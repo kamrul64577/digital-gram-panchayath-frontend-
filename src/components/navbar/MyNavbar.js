@@ -30,14 +30,15 @@ export default function MyNavbar() {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mx-auto nav-ul">
-                            <NavLink className="nav-li" activeStyle={{ color: "#FFFFFF"}} exact  to="/">Home</NavLink>
-                            <NavLink className="nav-li" activeStyle={{ color: "#FFFFFF" }} exact to="/services">Services</NavLink>
-                            <NavLink className="nav-li" activeStyle={{ color: "#FFFFFF" }} exact to="/about-us">About Us</NavLink>
-                            <NavLink className="nav-li" activeStyle={{ color: "#FFFFFF" }} exact to="/contact-us">Contact Us</NavLink>
+                                           
+                            <NavLink className="nav-li" activeStyle={{ color: "#FFFFFF" }} exact to="/">হোম</NavLink>
+                            <NavLink className="nav-li" activeStyle={{ color: "#FFFFFF" }} exact to="/services">সেবাসমূহ</NavLink>
+                            <NavLink className="nav-li" activeStyle={{ color: "#FFFFFF" }} exact to="/about-us">আমাদের সম্পর্কে</NavLink>
+                            <NavLink className="nav-li" activeStyle={{ color: "#FFFFFF" }} exact to="/contact-us">যোগাযোগ</NavLink>
                         </Nav>
                         <Nav className=" ">
                            
-                            {loggedIn ? <NavLink className="nav-li sign-up" activeStyle={{ color: "#FFFFFF" }} exact to="/userlogin">Logout</NavLink> : <NavLink className="nav-li sign-up" activeStyle={{ color: "#FFFFFF" }} exact to="/userlogin" >Login</NavLink>}
+                            {loggedIn ? <NavLink className="nav-li sign-up" activeStyle={{ color: "#FFFFFF" }} exact to="/userlogin">লগআউট</NavLink> : <NavLink className="nav-li sign-up" activeStyle={{ color: "#FFFFFF" }} exact to="/userlogin" >লগইন</NavLink>}
                           {/* <NavLink className="nav-li sign-up" activeStyle={{ color: "#FFFFFF" }} exact to="/userlogin">Login</NavLink>  */}
                          
                             {/* <NavLink className="nav-li sign-up" activeStyle={{ color: "#FFFFFF" }} exact to="/userlogin">Logout</NavLink> */}

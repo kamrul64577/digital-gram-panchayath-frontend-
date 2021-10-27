@@ -34,28 +34,28 @@ export default function Login() {
                 <div className="w-25 py-5  mx-auto ">
                     <Card className="mt-5">
                         <Card.Body className="card-bg ">
-                            <h2 className="text-center mb-4">Login</h2>
+                            <h2 className="text-center mb-4">লগইন </h2>
 
                             {error && <Alert variant="danger">{error}</Alert>}
                             <Form onSubmit={handleSubmit}>
                                 <Form.Group id="email">
-                                    <Form.Label>Email</Form.Label>
+                                    <Form.Label>ইমেইল</Form.Label>
                                     <Form.Control type="email" ref={emailRef} required />
                                 </Form.Group>
                                 <Form.Group id="password">
-                                    <Form.Label>Password</Form.Label>
+                                    <Form.Label>পাসওয়ার্ড</Form.Label>
                                     <Form.Control type="password" ref={passwordRef} required />
                                 </Form.Group>
 
-                                <Button disabled={loading} className="w-100 mt-3" type="submit">Log In</Button>
+                                <Button disabled={loading} className="w-100 mt-3" type="submit">লগইন</Button>
                             </Form>
                             <div className="w-100 text-center mt-3 forgot-password-div">
-                                <Link className="forgot-password"  to="/forgot-password">Forgot Password</Link>
+                                <Link className="forgot-password" to="/forgot-password">পাসওয়ার্ড ভুলে গেছেন </Link>
                             </div>
                         </Card.Body>
                     </Card>
                     <div className="w-100 text-center mt-3 signup-bg">
-                        Need an account? <Link className="signup-link" to="/usersignup">Sign Up</Link>
+                        নতুন একাউন্ট প্রয়োজন?  <Link className="signup-link" to="/usersignup">রেজিস্ট্রার করুন</Link>
                     </div>
                 </div>
             </div>

@@ -23,58 +23,58 @@ export default function Contact() {
         <>
             <section className="contact">
                 <div className="content">
-                    <h2>Contact Us</h2>
-                    <p>Welcome to our contact us page.</p>
+                    <h2>আমাদের সাথে যোগাযোগ করুন </h2>
+                    <p>আমাদের যোগাযোগের পেইজে  আপনাকে  স্বাগতম</p>
                 </div>
                 <div className="container">
                     <div className="contactInfo">
                         <div className="box">
                             <div className="icon"><i className="fa fa-map-marker" aria-hidden="true"></i></div>
                             <div className="text">
-                                <h3 className="line-hieght">Address</h3>
-                                <p className="line-hieght">Taltola,Surma Tower,<br/>Sylhet,<br/>3100</p>
-                                <p className ="line-hieght">Bishwanath,<br/>Sylhet,<br/>3100</p>
+                                <h3 className="line-hieght">ঠিকানা</h3>
+                                <p className="line-hieght">রামধানা, বিশ্বনাথ,<br />সিলেট,<br />৩১০০</p>
+                                <p className="line-hieght">তালতলা,সুরমা টাওয়ার<br />সিলেট,<br />৩১০০</p>
                             </div>
                         </div>
                         <div className ="box">
                             <div className ="icon"><i className ="fa fa-phone"></i></div>
                             <div className ="text">
-                                <h3 className ="line-hieght">Phone</h3>
-                                <p className ="line-hieght">01709-032647</p>
-                                <p className ="line-hieght">01773-764577</p>
+                                <h3 className="line-hieght">মোবাইল নাম্বার</h3>
+                                <p className="line-hieght">০১৭৭৩-৭৬৪৫৭৭</p>
+                                <p className="line-hieght">০১৭০৯-০৩২৬৪৭</p>
                             </div>
                         </div>
                         <div className ="box">
                             <div className ="icon"><i className ="fa fa-envelope-o"></i></div>
                             <div className ="text">
-                                <h3 className ="line-hieght">Email</h3>
-                                <p className ="line-hieght">jannatfatema690 @gmail.com</p>
-                                <p className ="line-hieght">kamrulneubcse @gmail.com</p>
+                                <h3 className="line-hieght">ইমেইল</h3>
+                                <p className="line-hieght">Kamrulneubcse@gmail.com</p>
+                                <p className="line-hieght">jannatfatema690@gmail.com</p>
                             </div>
                         </div>
                     </div>
 
                     <div className="contactForm">
                         <form onSubmit={sendEmail} >
-                            <h2>Send Message</h2>
+                            <h2>মেসেজ পাঠান </h2>
                             <div className="inputBox">
                                 <input type="text" name="name" required="required"/>
-                                <span>Full Name</span>
+                                <span>আপনার নাম </span>
                             </div>
                             <div className="inputBox">
                                 <input type="text" name="email" required="required"/>
-                                <span>Email</span>
+                                <span>আপনার ইমেইল </span>
                             </div>
                             <div className="inputBox">
                                 <input type="text" name="subject" required="required"/>
-                                <span>Subject</span>
+                                <span>সাবজেক্ট</span>
                             </div>
                             <div className="inputBox">
                                 <textarea required="required" name="message"></textarea>
-                                <span>Type your Message...</span>
+                                <span>আপনার মেসেজ লিখুন ...</span>
                             </div>
                             <div className="inputBox">
-                                <input onClick={onButtonClickHandler} type="submit" name="" value="Send"/>
+                                <input onClick={onButtonClickHandler} type="submit" name="" value="পাঠান"/>
                             </div>
                         </form>
                     </div>

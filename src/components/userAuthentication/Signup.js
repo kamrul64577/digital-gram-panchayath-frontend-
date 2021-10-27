@@ -38,29 +38,29 @@ export default function Signup() {
                 <div className="w-25 py-5  mx-auto ">
                     <Card className="mt-5">
                         <Card.Body className="card-bg">
-                            <h2 className="text-center mb-4">Sign Up</h2>
+                            <h2 className="text-center mb-4">সাইন আপ </h2>
                             {error && <Alert variant="danger">{error}</Alert>}
                             <Form onSubmit={handleSubmit}>
                                 <Form.Group id="email">
-                                    <Form.Label>Email</Form.Label>
+                                    <Form.Label>ইমেইল</Form.Label>
                                     <Form.Control type="email" ref={emailRef} required />
                                 </Form.Group>
                                 <Form.Group id="password">
-                                    <Form.Label>Password</Form.Label>
+                                    <Form.Label>পাসওয়ার্ড</Form.Label>
                                     <Form.Control type="password" ref={passwordRef} required />
                                 </Form.Group>
                                 <Form.Group id="password-confirm">
-                                    <Form.Label>Password Confirmation</Form.Label>
+                                    <Form.Label>পাসওয়ার্ড নিশ্চিত করুন</Form.Label>
                                     <Form.Control type="password" ref={passwordConfirmRef} required />
                                 </Form.Group>
                                 <Button disabled={loading} className="w-100 mt-3" type="submit">
-                                    Sign Up
+                                    সাইন আপ
                                 </Button>
                             </Form>
                         </Card.Body>
                     </Card>
                     <div className="w-100 text-center signup-bg mt-1">
-                        Already have an account? <Link className="signup-link" to="/userlogin">Login</Link>
+                        একাউন্ট করা আছে? <Link className="signup-link" to="/userlogin">লগইন</Link>
                     </div>
                 </div>
             </div>

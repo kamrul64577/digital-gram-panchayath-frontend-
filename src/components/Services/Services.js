@@ -24,21 +24,21 @@ export default function Services() {
         <div class="service">
             <div className="container ">
                 <div className="row">
-                    <h3 className="text-center py-3"> <Link to="/newService" className="request">Request to Add New Service </Link></h3>
+                    <h3 className="text-center py-3"> <Link to="/newService" className="request">নতুন সার্ভিসের জন্য আবেদন করুন  </Link></h3>
                     <div className="col-lg-12">
                         {serviceList.map((val, key) => {
                             return <div>
 
-                                <div className="hospital-information my-5 ">
+                                <div className=" my-5 ">
 
                                     <Card className="mx-4 bg-light" >
                                         <Card.Header>{val.scategories}</Card.Header>
                                         <Card.Body className="p-5">
                                             <Card.Title className="fs-2">{val.sname}</Card.Title>
-                                            <Card.Text><p className="mt-3 bg-dark text-white w-25 p-2">Why you need this service?</p>
+                                            <Card.Text><p className="mt-3 bg-dark text-white w-25 p-2">এই সার্ভিসেস কেন প্রয়োজন?</p>
                                                 {val.sdescription}
                                             </Card.Text>
-                                            <Button variant="success">Apply for Service</Button>
+                                            <Button variant="success">এই সেবাটির জন্য আবেদন করুন</Button>
                                         </Card.Body>
                                     </Card>
                                 </div>

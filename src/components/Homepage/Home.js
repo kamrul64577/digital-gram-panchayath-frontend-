@@ -30,12 +30,14 @@ export default function Home() {
         <>
             {/* Header Section  */}
             <section className="banner d-flex justify-content-center align-items-center">
-                <h1 className="text-white fst-italic">
-                    Welcome To The Digital Village <br />{' '}
+                <h1 className="text-white fst-italic"> ডিজিটাল ভিলেজে স্বাগতম
+
+                     <br />{' '}
+                    {/* Welcome To The Digital Village */}
                     <span className="span-color ms-5 ps-5">
                         {/* Style will be inherited from the parent element */}
                         <Typewriter
-                            words={['Digital Panchayath For Any Judicial work', 'Digitally Connected Everyone', 'Apply And Get Any Categories of Services', 'Get The Updated News Easily']}
+                            words={['আমাদের ডিজিটাল গ্রামে স্বাগতম','যেকোন বিচারিক কাজের জন্য ডিজিটাল পঞ্চায়েত','সবাই ডিজিটালভাবে সংযুক্ত ','যে কোন ধরনের সেবা পেতে আবেদন করুন', 'সহজেই আপডেটেট  খবর পাবেন']}
                             loop={5}
                             cursor
                             cursorStyle='_'
@@ -50,8 +52,8 @@ export default function Home() {
             </section>
 
             <Container>
-                <h3 className="repair my-4">Do you need Repair or new installment anything?</h3> <br/>
-                <Link to="/repair" className="read-more apply">Click Here to Apply</Link>
+                <h3 className="repair my-4">আপনার কি নতুন  কিছু  তৈরি  বা মেরামত করা দরকার?</h3> <br/>
+                <Link to="/repair" className="read-more apply">এখানে ক্লিক করুন</Link>
 
             </Container>
 

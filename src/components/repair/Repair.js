@@ -24,41 +24,41 @@ export default function Repair() {
     return (
         <div>
             <section className="request_for_installment">
-                <h1 className="tittle">Request For Installment</h1>
+                <h1 className="tittle">মেরামতের জন্য আবেদন করুন </h1>
                 <div className="container">
                     <div className="contact-form row">
                         <div className="form-field col-lg-6">
                             <textarea id="name" className="input-text" type="text" name="name" onChange={(e) => {
                                 setName(e.target.value)
                             }}></textarea>
-                            <label for="name" className ="label">Your Name</label>
+                            <label for="name" className="label">আপনার নাম</label>
                         </div>
                         <div className="form-field col-lg-6">
                             <textarea id="email" className="input-text" type="email" name="email" onChange={(e) => {
                                 setEmail(e.target.value)
                             }}></textarea>
-                            <label for="email" className ="label">email</label>
+                            <label for="email" className="label">আপনার ইমেইল </label>
                         </div>
                         <div className="form-field col-lg-6">
                             <textarea id="Request" className="input-text" type="text" name="requestFor" onChange={(e) => {
                                 setRequestFor(e.target.value)
                             }}> </textarea>
-                            <label for="Request" className ="label">Request for?</label>
+                            <label for="Request" className="label">কিসের জন্য আবেদন করবেন ?</label>
                         </div>
                         <div className="form-field col-lg-6">
                             <textarea id="phone" className="input-text" type="text" name="contact" onChange={(e) => {
                                 setContact(e.target.value)
                             }}> </textarea>
-                            <label for="phone" className ="label">Contact number</label>
+                            <label for="phone" className="label">আপনার মোবাইল নাম্বার</label>
                         </div>
                         <div className="form-field col-lg-12">
                             <textarea id="message" className="input-text" type="text" name="description" onChange={(e) => {
                                 setDescription(e.target.value)
                             }}></textarea>
-                            <label for="message" className ="label">Briefly Describe Your Need</label>
+                            <label for="message" className="label">কেনো এই সেবাটি আপনার প্রয়োজন?</label>
                         </div>
                         <div className="form-field col-lg-12">
-                            <input className="submit-btn" type="submit" value="submit" onClick={requestRepair}/>
+                            <input className="submit-btn" type="submit" value="আবেদন করুন" onClick={requestRepair}/>
                         </div>
                     </div>
                 </div>
